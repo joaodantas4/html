@@ -1,0 +1,91 @@
+*{
+    padding: 0;/*define para o navegador, que o espaçamento a ser utilizado na página é igual a zero*/
+    margin: 0;/*define o valor 0 como margem para página*/}
+header{ /*Configura o cabeçalho da página*/
+    background-color: #769a88;
+    /*Altera a cor de fundo da área do cabeçalho*/
+    color: #f5f0f0;/*altera a cor da fonte*/
+    padding: 15px;/*espaçamento entre o texto e as margens*/
+    text-align:center;/*alinha o texto no centro da página*/
+  border-bottom: #000000 3px
+  solid;
+
+    font-family: 'Lucida sans', 'lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*grid de produtos*/
+.container {
+    background-color: #e2e6e7;
+    min-height: 60vh;
+    padding: 50px;
+}
+.product-container{
+ max-width: 1200px;
+ margin: 0 auto;   
+}
+.card {
+    width: 31%;
+    display: inline-block;
+}
+.product-image {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#img-1 {
+    background-image:url(imagem/imagemaliançaouro1.jpg);
+}
+
+#img-2 {
+    background-image:url(imagem/imagemaliançaouro2.jpg);
+}
+
+#img-3 {
+    background-image:url(imagem/imagemaliançaouro3.jpg);
+}
+
+#img-4 {
+    background-image:url(imagem/imagemaliançaprata1.jpg);
+}
+
+#img-5 {
+    background-image:url(imagem/imagemaliançaprata2.jpeg);
+}
+
+#img-6 {
+    background-image:url(imagem/imagemaliançaprata3.jpg);
+}
+h3{
+    margin-bottom: 10px;
+    color: rgb(4, 15, 15);
+    font-size: 24px;
+}
+.card p{ 
+    margin-bottom: 10px;
+}
+.btn{
+    display: block;
+    width: 100;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: black;
+    color: beige;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+
+}
+
+.btn:hover { 
+    background-color: #605e5e;
+}
+    footer{ 
+text-align: center;
+    padding:80px;
+    color: rgb(174, 174, 170);
+}
+    
+    
+    
+
