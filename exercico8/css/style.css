@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+/*estilo do corpo*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+margin: 0%;
+
+}
+.anotacao{
+    background-color: rgb(120, 168, 239);
+padding: 5px;
+text-align: center;
+
+}
+.cabecalho{
+    padding: 60px;
+    text-align: center;
+    background-image:url(../imagem/siteresponsivodesktop1.png);
+    background-size: cover;
+color: aliceblue;
+}
+.barra_nav {
+    display: flex;
+    background-color: aquamarine;
+}
+
+/*estilo dos links da barra de navegaçao*/
+.barra_nav a{
+
+    color: black;
+    padding: 14px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* trocar a cor de fundo quando passar o cursor*/
+
+.barra_nav a:hover{
+
+    background-color: aliceblue;
+    color: brown;
+}
+
+/*configuraçao a div da coluna*/
+
+.coluna{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*criar duas colunas desiguais ( 30 e 70%)*/
+.lateral{
+    flex: 30%;
+    background-color: rgb(81, 178, 185);
+padding: 20px;
+}
+.principal{
+    flex: 70%;
+    background-color: aliceblue;
+    padding: 20px;
+}
+/* imagem falsas apenas para marcaçao de espaço */
+
+.imagem_falsa{
+    background-color: rgb(129, 127, 127);
+width: 100%;
+padding: 20px;
+height: 200px;
+margin-bottom: 5px;
+}
+
+.imagem_falsa2{
+    background-color: rgb(129, 127, 127);
+width: 100%;
+padding: 20px;
+height: 60px;
+margin-bottom: 5px;
+
+}
+
+.imagem_falsa3{
+    background-color: rgb(129, 127, 127);
+width: 100%;
+padding: 20px;
+height: 200px;
+margin-bottom: 5px;
+}
+
+.imagem_falsa4{
+    background-color: rgb(129, 127, 127);
+width: 100%;
+padding: 20px;
+height: 200px;
+margin-bottom:5px;
+}
+.rodape{
+    max-height: fit-content;
+    padding: 5px;
+    text-align:center;
+    background-color: black;
+}
+
+
+@media screen and(max-width: 500px) 
+{
+    
+    .coluna, .barra_nav{
+        flex-direction:column;
+    }
+    .cabecalho{
+        background-image:url(../imagem/sitemobile.png);
+        background-size:cover;
+        color: aliceblue;
+    }
+    
+}
