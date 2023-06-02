@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title> Concessionária de Carros  </title>
+<meta name="description" content="Bem vindos ao site com html5, 
+css3 e jquery e design responsivo"/>
+
+<meta name="viewport" content="width-device-width, initial-scale=1"/>
+<link rel="shortcut icon" type="image/x-icon" href="icone_carro.png" />
+
+<link rel="author" type="text/plain" href="humans.txt" />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+<link rel="stylesheet" href="css/estilo.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+
+<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider();
+		});
+	</script>
+
+	<!-- Script para o anuncio rotativo -->
+
+
+
+<script type="text/javascript" src="js/jquery.cycle.all.js"> </script>
+
+<script type="text/javascript">
+$(function () {
+	$(".anuncio ul").cycle({
+		fx: 'fade',
+		speed: 2000,
+		timeout: 3000,
+		})
+	})
+</script>	
+	
+	
+	
+</head>
+<body>
+<!-- Código página facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<header>
+<h1> <a href="index.html"> <img class="fade" alt=""
+src="img/dantas.png" /> </a> </h1>
+
+<nav>
+<ul>
+<li><a href="index.html">INÍCIO</a></li>
+<li><a href="carros.html">CARROS</a></li>
+<li><a href="servicos.html">SERVIÇOS</a></li>
+<li><a href="contatos.html">CONTATOS</a></li>
+</nav>
+</header>
+
+<section id="conteudo">
+<section id="principal">
+<article id="galeria-inicio">
+	<div class="flexslider">
+	   <ul class="slides">
+			<li>
+	    		<a href=""><img src="img/sw4.jpg"/></a>
+	    		<p class="flex-caption">CARRO: TOYOTA SW4 2024: prata, 7 lugares, tração 4x4... </p>
+	    	</li>
+	    	<li>
+	    		<a href=""><img src="img/yaris.jpg"/></a>
+	    		<p class="flex-caption">CARRO:TOYOTA YARIS 2024: cinza, cambio automático, farol de milha...</p>
+	    	</li>
+			<li>
+	    		<a href=""><img src="img/hrv.jpg"/></a>
+	    		<p class="flex-caption">CARRO: HONDA HRV 2024: Branco, cambio automático...</p>
+	    	</li>
+			<li>
+	    		<a href=""><img src="img/corolla.jpg"/></a>
+	    		<p class="flex-caption">CARRO: TOYOTA COROLLA 2024: Azul, cambio automático...</p>
+	    	</li>
+			
+		</ul>
+	</div>
+</article>
+</section>
+<aside> 
+<br>
+   <p>
+	ANÚNCIOS RELEVANTES
+	</p>
+	<br> <br>
+	<!-- Código anuncio -->
+	
+	
+<div class="anuncio"> 
+
+<ul>
+<li> <a href=""><img src="img/anuncio3.jpg"    /></a>
+<li> <a href=""><img src="img/anuncio2.jpg"    /></a>
+<li> <a href=""><img src="img/anuncio1.png"    /></a>
+</ul>
+</div>
+
+
+			
+</aside>
+</section>
+
+<footer>
+" Dantas carros novos: Realizando o seu sonho"
+</footer>
+
+</body>
+</html>
