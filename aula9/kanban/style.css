@@ -20,7 +20,7 @@ h1{
     list-style: none;
     margin: 0;
     padding: 1rem;
-    border: 2px #ccc;
+    border: 2px dashed #ccc;
 }
 .tasks li{
     background-color: #fff;
