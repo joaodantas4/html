@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+header {
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg-home{
+    position: relative;
+
+
+}
+
+.bg-home::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(img/capa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+i{
+    color: #131313;
+}
+
+.header-icons{
+    display:flex;
+    gap: 14px;
+}
+
+.header-icons a:hover i{
+    color: #4a40d3;
+}
+
+.header-button{
+    border: 1px solid #423c3c;
+    color: #131212;
+    padding: 8px 24px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-decoration: none;
+    transition: background-color 0.8s;
+}
+
+.header-button:hover{
+border: 1px solid #000000;
+background-color: rgb(87, 87, 207);
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.hero{
+    color: #110f0f;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    font-family: Sora;
+}
+.hero h1{
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 46px;
+}
+
+.hero p{
+    text-align: center;
+    margin: 14px 0;
+}
+
+.button-contact{
+    color: #fff;
+    text-decoration: none;
+    background-color: #405bd3;
+    padding: 14px 28px;
+}
+
+.about{
+    background-color: #f9f9f9;
+    overflow: hidden;
+    color: #0a0b53;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+}
+.about-content img{
+    max-width: 570px;
+}
+
+.about-content div{
+    flex: 1;
+}
+
+.about-description h2{
+    font-size: 38px;
+    margin-bottom: 24px;
+}
+
+.about-description p{
+    margin-bottom: 14px;
+    line-height: 150%;
+}
+
+.services {
+    background-color: rgb(150, 181, 238);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.services-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.services-content p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.haircuts{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 44px 34px 44px;
+}
+
+.haircut{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+}
+
+.haircut img{
+    width: 100%;
+    max-width: 354px;
+    transition: transform 0.2s;
+}
+
+.haircut img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.haircut-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: #fff;
+    z-index: 99;
+}
+
+.haircut-info button{
+    color: #f6f3f3;
+    background-color: #4761be;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+}
+
+.footer {
+    background-color: #5d40d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: #FFF;
+  }
+ 
+  .footer-icons {
+    display: flex;
+    gap: 8px;
+    color: #FFF;
+  }
+ 
+  .btn-whatsapp {
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+  }
+  .btn-whatsapp img {
+    max-width: 74px;
+    transition: transform 0.4s;
+  }
+  .btn-whatsapp img:hover {
+    transform: scale(1.1);
+  }
+ 
+  .btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #232224;
+    color: #FFF;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+ 
+  .btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .form{
+    background-color: #787ce9;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    display: flex;
+    width: 50%;
+  }
+
+  .form input,
+  .form textarea{
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2rem
+  }
+
+  .form label{
+   color:#FFF;
+   line-height: 1;
+   margin-bottom: 0.5rem; 
+}
+
+.form textarea{
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form button{
+padding: 1rem;
+color: #010101;
+text-transform: uppercase;
+border: none;
+border-radius: 8px;
+cursor:pointer;
+transition: 0.2s;
+}
+
+.form button:hover {
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background: #8780dd;
+}
